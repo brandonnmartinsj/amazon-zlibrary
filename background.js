@@ -45,7 +45,7 @@ async function openBook() {
     let nameBook = await getBookName();
     if (await testWebsiteTabs() && nameBook[0] !== null && typeof nameBook[0] !== 'undefined') {
         browser.tabs.update({
-            "url": "https://b-ok.cc/s/" + nameBook[0]
+            "url": "https://z-lib.is/s?q=" + nameBook[0] + "&languages%5B%5D=portuguese"
         });
     } else {
         badWebsite();
